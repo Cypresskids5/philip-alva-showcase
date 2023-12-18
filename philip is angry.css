@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
+/*
+COLOR PALLET
+#67AAF9
+#B7C3F3
+#7D5BA6
+#ACFCD9
+#55D6BE
+family:lekton
+*/ 
+*{
+    font-family: 'Lekton';
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vmin;
+    background-color: #7D5BA6;
+    
+}
+body{
+    background: linear-gradient(#55D6BE,#ACFCD9,#55D6BE);
+}
+
+.nav > a {
+font-size: 3vmin;
+text-decoration: none;
+color: #ACFCD9;
+padding: 1vmin;
+transition: .3s ease;
+}
+.nav > a:hover{
+    text-decoration: wavy underline;
+    
+}
+
+.logo{
+    height: 4.5vmin;
+    position: absolute;
+    left: 0;
+}
+
+
+.content-box{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.project-box{
+    width: 120vmin;
+    height: fit-content;
+    background-color: whitesmoke;
+    border-radius: 1.25vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vmin;
+    margin-bottom: 10vmin;
+}
+.thumbnail{
+    width: 80vmin;
+    height: 40vmin;
+    border-radius: 1.25vmin;
+}
+
+.title{
+    font-size: 3vmin;
+}
+
+.desc{
+    font-size: 3vmin;
+    width: 80vmin;
+    margin-top: 2vmin;
+}
+
+.project-link{
+    font-size: 2vmin;
+}
+
+@media only screen and (orientation: portraint) {
+    .project-box{
+        width: 80vmin;
+    }
+
+    .desc{
+        width: 70vmin;
+    }
+    .thumbnail{
+        width: 70vmin;
+    }
+    .screenshots-grid{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25vmin;
+        margin-bottom: 10vmin;    
+    }
+
+}
+
+.screenshots-grid{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3vmin;
+    margin-top: 5vmin;
+}
+
+.grid-image{
+    width: 60%;
+    height: 25vmin;
+    border-radius: 1.25vmin;
+    position: relative;
+    left: 20%;
+}
